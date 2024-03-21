@@ -1,0 +1,49 @@
+
+<div class="image">
+  <img src="./assets/revature.png" id="revature-logo" class="application">
+  <div id="page-title">
+  <a [ngClass]="{'disabled-link': !codespacesLink}" href= {{applicationLink}} target="_blank" class="application">
+  <h1 id="title">RevField-RevHire</h1>
+  </a>
+  <a href= "{{repoLink}}" target="_blank" class="application">
+    <img src="./assets/github-mark.svg" id="github-logo">
+    </a>
+  </div>
+  <div id="codespaces-link">
+    <mat-form-field>
+    <input matInput type="text" name="codespaces-link" align = "center"  placeholder="GitHub Codespaces Link" [(ngModel)]="codespacesLink" (input)="createLinks($event)">
+  </mat-form-field>
+  </div>
+  <!-- <div class="sub-title">
+    <h2 id="track-fs">Full Stack Developer</h2>
+    <h2 id="track-genai">Gen AI Engineer</h2>
+  </div> -->
+
+  <a href="{{repoLink}}" target="_blank">
+    <mat-card class="service" id="angular">
+      <mat-card-title align="center">Job Portal</mat-card-title>
+      <img class="services-img" src="./assets/frontend-angular.PNG" alt="">
+    </mat-card>
+  </a>
+
+  <a href="{{repoLink}}" target="_blank">
+    <mat-card class="service" id="javalin">
+      <mat-card-title align="center">Job Service</mat-card-title>
+      <img class="services-img" src="./assets/backend-java.PNG" alt="">
+    </mat-card>
+  </a>
+
+  <a href="{{repoLink}}" target="_blank">
+    <mat-card class="service" id="spring">
+      <mat-card-title align="center">User Service</mat-card-title>
+      <img class="services-img" src="./assets/backend-spring.PNG" alt="">
+    </mat-card>
+  </a>
+
+  <a href="{{repoLink}}/" target="_blank">
+    <mat-card class="service" id="genai">
+      <mat-card-title align="center">Gen AI Chatbot</mat-card-title>
+      <img class="services-img" src="./assets/genai-service.PNG" alt="">
+    </mat-card>
+  </a>
+</div>
